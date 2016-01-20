@@ -22,10 +22,10 @@
 <div class="container">
 <table class= "table table-striped">
 	<tr>	
-		<td class="text-right"><strong>Title</strong></td>
-		<td class="text-right">Release Date</td>
-		<td class="text-right">Tickets Sold</td>
-		<td class="text-right">Gross Revenue</td>
+		<td><strong>Title</strong></td>
+		<td class="text-right"><strong>Release Date<strong></td>
+		<td class="text-right"><strong>Tickets Sold<strong></td>
+		<td class="text-right"><strong>Gross Revenue<strong></td>
 	</tr>
 	
 
