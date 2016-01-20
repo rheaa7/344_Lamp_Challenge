@@ -44,7 +44,7 @@ if (count($matches) == 1) {
 
     <h1><?= $title ?></h1>
     <p><?= $genre ?> movie rated <?= $rating ?> </p>
-    <p>Release on <?=$date ?> </p>
+    <p>Release on <?=(date("j-M-Y", strtotime($date))) ?> </p>
     <p>This movie sold <?=number_format($sold)?> tickets, earning gross revenues of $<?=number_format(money_format('%.0n', $gross))?> </p> 
    
 
@@ -56,6 +56,8 @@ if (count($matches) == 1) {
     ?>
     <p> Rated <?= $rated ?>% by <?= $people ?> people</p>
     <p> <?= $description ?>
+
+    
 
 </body>
 </html>

@@ -37,5 +37,7 @@ $matches = $movieModel->search($q);
     //include 'views/matches.php';
     ?>
 
+    <p>Link To GitHub Repo: <a href="https://github.com/rheaa7/344_Lamp_Challenge"></a>
+        
 </body>
 </html>
