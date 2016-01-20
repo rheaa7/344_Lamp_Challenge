@@ -22,23 +22,23 @@
 <div class="container">
 <table class= "table table-striped">
 	<tr>	
-		<td>Title</td>
-		<td>Release Date</td>
-		<td>Tickets Sold</td>
-		<td>Gross Revenue</td>
+		<td class="text-right"><strong>Title</strong></td>
+		<td class="text-right">Release Date</td>
+		<td class="text-right">Tickets Sold</td>
+		<td class="text-right">Gross Revenue</td>
 	</tr>
 	
 
 	<?php foreach ($movie_table as $row) { ?>
 		<tr>
-			<td> <a href="/344_Lamp_Challenge/php-forms/movie.php?id=<?php echo $row['movie_id']?>"> <?=$row['title'] ?> </a> </td>
+			<td text-right> <a href="/344_Lamp_Challenge/php-forms/movie.php?id=<?php echo $row['movie_id']?>"> <?=$row['title'] ?> </a> </td>
 
 
-			<td> <?= (date("j-M-Y", strtotime($row['released']))) ?> </td>
+			<td class="text-right"> <?= (date("j-M-Y", strtotime($row['released']))) ?> </td>
 
-			<td> <?= number_format($row['tickets']); ?> </td>
+			<td class="text-right"> <?= number_format($row['tickets']); ?> </td>
 
-			<td> $<?= number_format(money_format('%.0n', ($row['gross']))) ?> </td>
+			<td class="text-right"> $<?= number_format(money_format('%.0n', ($row['gross']))) ?> </td>
 		
 		</tr>
 	<?php } ?>
