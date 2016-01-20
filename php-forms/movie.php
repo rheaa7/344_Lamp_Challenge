@@ -47,7 +47,7 @@ if (count($matches) == 1) {
     <p>Release on <?=$date ?> </p>
     <p>This movie sold <?=$sold ?> tickets, earning gross revenues of <?=$gross?> </p> 
 
-<h2> Rotten Tomatoes Rating </h2>
+    <h2> Rotten Tomatoes Rating </h2>
     <?php
     $rated = htmlentities($data->tomatoMeter);
     $people = htmlentities($data->tomatoReviews);

@@ -17,7 +17,7 @@
 
 	<?php foreach ($movie_table as $row) { ?>
 		<tr>
-			<td> <a href="/movie.php?id=<?php echo $row['movie_id']?>"> <?=$row['title'] ?> </a> </td>
+			<td> <a href="/344_Lamp_Challenge/php-forms/movie.php?id=<?php echo $row['movie_id']?>"> <?=$row['title'] ?> </a> </td>
 
 
 			<td> <?= (date("j-M-Y", strtotime($row['released']))) ?> </td>
