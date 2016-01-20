@@ -1,3 +1,5 @@
+<!--creates the search form and bar for client to search movie name-->
+
 <h1>Movie Revenues from 2014</h1>
 <form action="" method="GET">
     <div class="form-group">
@@ -10,7 +12,4 @@
             required
             >
     </div>
-    <!-- <div class="form-group">
-        <button class="btn btn-primary" type="submit">Get Movie</button>
-    </div> -->
 </form>

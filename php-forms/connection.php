@@ -1,3 +1,4 @@
+<!--establishes connection to mysql database created in mySQL workbench-->
 <?php
 function getConnection() {
 	require_once 'secret/db-credentials.php';
