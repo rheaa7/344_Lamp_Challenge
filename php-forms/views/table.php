@@ -38,7 +38,7 @@
 
 			<td> <?= number_format($row['tickets']); ?> </td>
 
-			<td> <?= money_format('%.0n', ($row['gross'])) ?> </td>
+			<td> <?= money_format('%n', ($row['gross'])) ?> </td>
 		
 		</tr>
 	<?php } ?>
