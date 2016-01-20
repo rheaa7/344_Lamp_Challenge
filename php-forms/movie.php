@@ -45,7 +45,8 @@ if (count($matches) == 1) {
     <h1><?= $title ?></h1>
     <p><?= $genre ?> movie rated <?= $rating ?> </p>
     <p>Release on <?=$date ?> </p>
-    <p>This movie sold <?=$sold ?> tickets, earning gross revenues of <?=$gross?> </p> 
+    <p>This movie sold <?=number_format($sold)?> tickets, earning gross revenues of $<?=number_format(money_format('%.0n', $gross))?> </p> 
+   
 
     <h2> Rotten Tomatoes Rating </h2>
     <?php
