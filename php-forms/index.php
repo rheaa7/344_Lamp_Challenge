@@ -5,7 +5,13 @@ require_once 'connection.php';
 require_once 'models/movie-model.php';
 
 //capture searched movie in search bar
-$q = $_GET['q'];
+//$q = $_GET['q'];
+
+if(isset($_GET['q'])) {
+    $q = $_GET['q'];
+} else {
+    $q = "";
+}
 
 $conn = getConnection();
 $movieModel = new Movies($conn);
